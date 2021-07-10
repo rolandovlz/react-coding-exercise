@@ -2,6 +2,7 @@
   "name": "react-coding-exercise",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rolandovlz.github.io/react-coding-exercise",
   "dependencies": {
     "@apollo/client": "^3.3.21",
     "@testing-library/jest-dom": "^5.14.1",
