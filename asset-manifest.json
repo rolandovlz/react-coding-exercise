@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-coding-exercise/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/react-coding-exercise/static/js/main.73a5c756.chunk.js",
+    "main.js.map": "/react-coding-exercise/static/js/main.73a5c756.chunk.js.map",
+    "runtime-main.js": "/react-coding-exercise/static/js/runtime-main.95b1ae52.js",
+    "runtime-main.js.map": "/react-coding-exercise/static/js/runtime-main.95b1ae52.js.map",
+    "static/js/2.2c55c7cf.chunk.js": "/react-coding-exercise/static/js/2.2c55c7cf.chunk.js",
+    "static/js/2.2c55c7cf.chunk.js.map": "/react-coding-exercise/static/js/2.2c55c7cf.chunk.js.map",
+    "index.html": "/react-coding-exercise/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/react-coding-exercise/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.2c55c7cf.chunk.js.LICENSE.txt": "/react-coding-exercise/static/js/2.2c55c7cf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.95b1ae52.js",
+    "static/js/2.2c55c7cf.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.73a5c756.chunk.js"
+  ]
+}
