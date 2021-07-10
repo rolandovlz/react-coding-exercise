@@ -80,7 +80,12 @@ const CardText = styled.div`
   justify-content: center;
   height: 100%;
   width: 100%;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+  color: ${props => props.darkMode ? '#FFFFFF' : '#000000'};
+`;
+
+const Link = styled.a`
+  text-decoration: none;
   color: ${props => props.darkMode ? '#FFFFFF' : '#000000'};
 `;
 
@@ -101,5 +106,6 @@ export {
   Card,
   CardImage,
   CardText,
+  Link,
   LoaderWrapper
 }

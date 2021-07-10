@@ -2,7 +2,8 @@ import React from 'react';
 import {
   Card,
   CardImage,
-  CardText
+  CardText,
+  Link
 } from './StyledComponents';
 
 const Cards = ({ launches, darkMode }) => {
@@ -11,12 +12,23 @@ const Cards = ({ launches, darkMode }) => {
     {
       launches.map(({ id, mission_name, links }) => (
         <Card key={id} darkMode={darkMode}>
-          <CardImage 
-            src={links.flickr_images} 
-            alt={mission_name}
-          />
+          <Link 
+            href={links.video_link} 
+            target="_blank"
+          >
+            <CardImage 
+              src={links.flickr_images} 
+              alt={mission_name}
+            />
+          </Link>
           <CardText darkMode={darkMode}>
-            <strong>{mission_name}</strong>
+            <Link 
+              href={links.article_link} 
+              target="_blank"
+              darkMode={darkMode}
+            >
+              <strong>{mission_name}</strong>
+            </Link>
           </CardText>
         </Card>
       ))
