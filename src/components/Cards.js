@@ -15,6 +15,7 @@ const Cards = ({ launches, darkMode }) => {
           <Link 
             href={links.video_link} 
             target="_blank"
+            rel="noopener noreferrer"
           >
             <CardImage 
               src={links.flickr_images} 
@@ -26,6 +27,7 @@ const Cards = ({ launches, darkMode }) => {
               href={links.article_link} 
               target="_blank"
               darkMode={darkMode}
+              rel="noopener noreferrer"
             >
               <strong>{mission_name}</strong>
             </Link>
