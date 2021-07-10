@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useQuery } from '@apollo/client';
+import Loader from './Loader';
 import { Wrapper } from './StyledComponents';
 import Header from './Header';
 import Launches from './Launches';
@@ -23,7 +24,10 @@ const App = () => {
     }
   }, [data]);
 
-  if (loading) return 'loading';
+  if (loading) return (
+    <Loader />
+  );
+  
   if (error) return `Error: ${error}`;
 
   const toggleDarkMode = () => setDarkMode(!darkMode);

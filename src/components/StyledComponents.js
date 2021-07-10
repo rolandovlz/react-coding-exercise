@@ -84,6 +84,13 @@ const CardText = styled.div`
   color: ${props => props.darkMode ? '#FFFFFF' : '#000000'};
 `;
 
+const LoaderWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+`;
+
 export {
   Wrapper,
   HeaderBar,
@@ -93,5 +100,6 @@ export {
   Container,
   Card,
   CardImage,
-  CardText
+  CardText,
+  LoaderWrapper
 }
