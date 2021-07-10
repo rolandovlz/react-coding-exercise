@@ -7,6 +7,7 @@ import { ALL_LAUNCHES_PAST } from '../graphql/queries';
 
 const App = () => {
   const [launches, setLaunches] = useState([]);
+  const [darkMode, setDarkMode] = useState(false);
   const { data, error, loading } = useQuery(ALL_LAUNCHES_PAST);
 
   useEffect(() => {
@@ -25,10 +26,18 @@ const App = () => {
   if (loading) return 'loading';
   if (error) return `Error: ${error}`;
 
+  const toggleDarkMode = () => setDarkMode(!darkMode);
+
   return (
-    <Wrapper>
-      <Header />
-      <Launches launches={launches} />
+    <Wrapper darkMode={darkMode}>
+      <Header 
+        darkMode={darkMode}
+        toggleDarkMode={toggleDarkMode}
+      />
+      <Launches 
+        launches={launches} 
+        darkMode={darkMode}
+      />
     </Wrapper>
   )
 }

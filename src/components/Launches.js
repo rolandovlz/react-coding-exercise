@@ -6,14 +6,14 @@ import {
 } from './StyledComponents';
 import Cards from './Cards';
 
-const Launches = ({ launches }) => {
+const Launches = ({ launches, darkMode }) => {
   return (
     <LaunchesWrapper>
-      <Title>
+      <Title darkMode={darkMode}>
         SpaceX Launches <span role="img" aria-label="rocket">🚀</span>
       </Title>
-      <Container>
-        <Cards launches={launches} />
+      <Container darkMode={darkMode}>
+        <Cards launches={launches} darkMode={darkMode} />
       </Container>
     </LaunchesWrapper>
   )
